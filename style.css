@@ -79,7 +79,23 @@ html, body{
         rotate(225deg);
     }
 }
-
+input{
+    width: 250px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+input:focus{
+    border: 2px solid #209CEE;
+}
+input:focus::placeholder{
+    color: white;
+}
 button{
     position: relative;
     width: 150px;
@@ -114,6 +130,7 @@ button:hover span{
 }
 #box3{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     /* align-items: center; */
     height: 120px;
