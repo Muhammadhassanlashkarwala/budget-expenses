@@ -7,7 +7,7 @@
 html, body{
     /* font-family: sans-serif ; */
     /* display: flex; */
-    margin-top: 2vw ;
+    margin-top: 1vw ;
     /* align-items: center; */
     height: 100vh;
     width: 100%;
@@ -19,7 +19,7 @@ html, body{
 }
 #box{
     display: flex;
-    height: 300px;
+    height: 360px;
     margin-right: 10px;
     width: 400px;
     position: relative;
@@ -28,7 +28,7 @@ html, body{
    background: #2f2f2f;
 }
 #box1{
-    height: 300px;
+    height: 360px;
     margin-left: 10px;
     width: 400px;
     position: relative;
@@ -80,7 +80,8 @@ html, body{
     }
 }
 input{
-    width: 250px;
+    margin-top: 2vw ;
+    width: 320px;
     height: 60px;
     border-radius: 6px;
     font-size: 18px;
@@ -100,6 +101,7 @@ button{
     position: relative;
     width: 150px;
     padding: 15px 0;
+    border-radius: 6px;
     text-align: center;
     margin: 20px 10px 20px 0px;
     font-weight: bold;
@@ -131,6 +133,7 @@ button:hover span{
 #box3{
     display: flex;
     flex-wrap: wrap;
+    border-radius: 6px;
     justify-content: space-between;
     /* align-items: center; */
     height: 120px;
@@ -153,18 +156,40 @@ button:hover span{
 #item1 p{
     font-size: 25px;
     margin-top: 15px;
-    margin-left: 80px;
+    text-align: center;
+    /* margin-left: 80px; */
     font-weight: 600;
 }
 #item2 p{
     font-size: 25px;
     margin-top: 15px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
+    text-align: center;
     font-weight: 600;
 }
 #item3 p{
     font-size: 25px;
     margin-top: 15px;
-    margin-left: 50px;
+    text-align: center;
+    /* margin-left: 50px; */
     font-weight: 600;
 }
+
+
+/* Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "Deleted!",
+        text: "Your file has been deleted.",
+        icon: "success"
+      });
+    }
+  }); */

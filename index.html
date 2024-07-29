@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUdget-Expenses</title>
+    <link rel="shortcut icon" href="icons/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
@@ -11,16 +12,16 @@
     <div id="box">
         <div id="in">
             <h1>Budget</h1>
-            <input required placeholder="Enter your budget" spellcheck="false" type="text">  <br><br>
-            <button><span></span>Set Budget</button>
+            <input id="budgetInput" required placeholder="Enter your budget" spellcheck="false" type="text">  <br><br>
+            <button id="button1"><span></span>Set Budget</button>
         </div>
      </div>
      <div id="box1">
         <div id="in">
             <h1>Expenses</h1>
-            <input placeholder="Enter Title Of Product" type="text"> <br>
-            <input placeholder="Enter Cost Of The Product" type="text"> <br><br>
-            <button><span></span>Add amount</button>
+            <input id="productTitleInput" placeholder="Enter Title Of Product" type="text"> <br>
+            <input id="productCostInput" placeholder="Enter Cost Of The Product" type="text"> <br><br>
+            <button id="button2"><span></span>Add amount</button>
         </div>
      </div>
 </div>
@@ -28,17 +29,19 @@
         <div id="box3">
             <div id="item1">
                 <h1>Total Budget</h1>
-            <p>0</p>
+            <p  class="totalBudget">0</p>
             </div>
             <div id="item2">
                 <h1>Expenses</h1>
-            <p>0</p>
+            <p class="Expanses">0</p>
             </div>
             <div id="item3">
                 <h1>Balance</h1>
-            <p>0</p>
+            <p class="Balance">0</p>
             </div>
         </div>
      </div>
+     <script src="app.js"></script>
+     
 </body>
 </html>
