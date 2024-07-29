@@ -5,13 +5,16 @@
 }
 html, body{
     font-family: sans-serif ;
-    display: flex;
-    margin-top: 5vw ;
+    /* display: flex; */
+    margin-top: 2vw ;
     /* align-items: center; */
-    justify-content: center;
     height: 100vh;
     width: 100%;
     background: #111;
+}
+#main{
+    display: flex;
+    justify-content: center;
 }
 #box{
     display: flex;
@@ -74,4 +77,46 @@ html, body{
         transform: translate(-50%,-50%)
         rotate(225deg);
     }
+}
+
+button{
+    position: relative;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px 20px 0px;
+    font-weight: bold;
+    border: 2px solid #3eff37;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}span{
+    background: #3eff37;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s    ;
+
+}
+button:hover span{
+    width: 100%;
+}
+#main2{
+    display: flex;
+    margin-top: 2vw;
+    /* align-items: center; */
+    justify-content: center;
+}
+#box3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 50%;
+    background: blue;
+    color: #fff;
 }
