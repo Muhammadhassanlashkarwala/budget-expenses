@@ -4,6 +4,9 @@ const productCostInput = document.getElementById('productCostInput')
 let totalBudget = document.querySelector('.totalBudget')
 let Expanses = document.querySelector('.Expanses')
 let Balance = document.querySelector('.Balance')
+let orderList = document.getElementById('orderList')
+
+// let cost = document.getElementById('cost')
 const numberRegex = /\d/;
 
 // let ol = document.getElementById('save')
@@ -39,11 +42,27 @@ checkAmount.addEventListener("click" , ()=>{
         
     }
     else{
+
         sum += productCost ;
         let currentBalance = minus - sum ;
         Expanses.innerHTML = sum ;
         Balance.innerHTML = currentBalance ;
         productInput.value = "" ;
         productCostInput.value = "" ;
+         orderList.innerHTML += `
+         <li>
+         <p id="para">${productTitle}</p>
+         <p id="cost">${productCost}</p>
+         <button class="button3" id="button3"><i class="fa-solid fa-trash"></i></button>
+          </li>
+         `
+let button3 = document.querySelectorAll("#button3");
+button3.forEach(e => {
+  e.addEventListener("click",()=>{
+   console.log(e.parentNode);
+   e.parentNode.remove();
+  })
+});
     }
-})
+
+});

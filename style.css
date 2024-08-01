@@ -7,9 +7,10 @@
 html, body{
     /* font-family: sans-serif ; */
     /* display: flex; */
-    margin-top: 1vw ;
+    padding-top: 2vw ;
     /* align-items: center; */
     height: 100vh;
+    overflow: hidden;
     width: 100%;
     background: #111;
 }
@@ -217,11 +218,23 @@ span{
     /* background: red; */
     height: 100px;
     margin-top: 2vw;
+
   }
   #main3 .hujn{
     background: #fff;
     height: 100px;
     width: 50%;
+   
+  }
+  #orderList{
+ overflow-y: scroll ;
+ overflow-x: hidden;
+ height: 60px;
+
+
+ &::-webkit-scrollbar{
+    background: transparent;
+ }
   }
   .hujn{
     display: flex; 
@@ -231,15 +244,31 @@ span{
   }
   .hujn h1{
     margin-right: 4vw;
+    color: #209CEE;
+    cursor: pointer;
     /* padding: 1vw;
     padding-top: 2vw; */
   }
 
   li{
+    padding-right: 1vw;
+    padding-top: 0.9vw;
     height: 50px;
+    color: #209CEE;
     width: 500px;
+    font-weight: 500;
+    font-size: 1.8vw;
+    cursor: pointer;
     /* background-color: #209CEE; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  li #button3{
+  background: transparent;
+  font-size: 1.8vw;
+  border: none;
+  margin-right: 1.8vw;
+  cursor: pointer;
+  color: #209CEE;
   }
