@@ -97,7 +97,7 @@ input:focus{
 input:focus::placeholder{
     color: white;
 }
-button{
+#button1{
     position: relative;
     width: 150px;
     padding: 15px 0;
@@ -110,7 +110,22 @@ button{
     color: #fff;
     cursor: pointer;
     overflow: hidden;
-}span{
+}
+#button2{
+    position: relative;
+    width: 150px;
+    padding: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+    margin: 20px 10px 20px 0px;
+    font-weight: bold;
+    border: 2px solid #209CEE;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+span{
     background: #209CEE;
     height: 100%;
     width: 0;
@@ -121,7 +136,10 @@ button{
     transition: 0.5s    ;
 
 }
-button:hover span{
+#button1:hover span{
+    width: 100%;
+}
+#button2:hover span{
     width: 100%;
 }
 #main2{
@@ -208,10 +226,20 @@ button:hover span{
   .hujn{
     display: flex; 
     padding: 2vw;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
   }
   .hujn h1{
+    margin-right: 4vw;
     /* padding: 1vw;
     padding-top: 2vw; */
+  }
+
+  li{
+    height: 50px;
+    width: 500px;
+    /* background-color: #209CEE; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
