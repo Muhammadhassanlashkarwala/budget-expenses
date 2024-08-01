@@ -20,6 +20,7 @@ setBudget.addEventListener("click" , () =>{
     budgetInput.value = "" ;
   }
   else{
+
     minus = budget
     totalBudget.innerHTML = budget ;
     budgetInput.value = "" ;

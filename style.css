@@ -193,3 +193,25 @@ button:hover span{
       });
     }
   }); */
+  #main3{
+    display: flex;
+    justify-content: center;
+    /* background: red; */
+    height: 100px;
+    margin-top: 2vw;
+  }
+  #main3 .hujn{
+    background: #fff;
+    height: 100px;
+    width: 50%;
+  }
+  .hujn{
+    display: flex; 
+    padding: 2vw;
+    gap: 10px;
+    align-items: center;
+  }
+  .hujn h1{
+    /* padding: 1vw;
+    padding-top: 2vw; */
+  }
